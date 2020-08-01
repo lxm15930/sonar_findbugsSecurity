@@ -5,7 +5,7 @@ pipeline {
 	  steps {
 	   withSonarQubeEnv('sonarqube'){
 	   bat """
-	     mvn clean compile -Dmaven.test.skip=true sonar:sonar \
+	     mvn clean verify -Dmaven.test.skip=true sonar:sonar \
 		 -Dsonar.login=admin \
 		 -Dsonar.password=admin
 		"""
