@@ -1,0 +1,4 @@
+在cd到当前目录下,执行以下命令:
+mvn clean verify sonar:sonar
+或
+mvn sonar:sonar
