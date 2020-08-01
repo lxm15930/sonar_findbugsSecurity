@@ -1,12 +1,6 @@
 pipeline {
     agent any
-	stages {
-	 stage('code build'){
-	  steps {
-          bat "mvn clean compile -Dmaven.test.skip=true"
-	  }
-	}
-	
+	stages {	
 	stage('code Analysis'){
 	  steps {  
 	   script {
